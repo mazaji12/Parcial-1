@@ -4,22 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-
-
-<script>
-
-
-/*
-Funciones  -  Crea una funcion llamada "calculateDogAge" que: 
-
-- reciba como argumento un número representando la edad en años humanos.
-- realiza el cálculo de la edad en base a la conversión 1 año humano = 7 años perro.  
-- Deberá escribir en consola "Tu perro tiene NN años perro"
-- EJ:   calculateDogAge(2)  -> "Tu pero tiene 14 años perro"
-
-*/
-
-// CREA TU FUNCION calculateDogAge aqui:
 <div class='calculateDogAge'> 
   <form class='calculator'>
   <p> Introduce la edad de tu perro:
@@ -31,7 +15,7 @@ Funciones  -  Crea una funcion llamada "calculateDogAge" que:
     <p id='text'> Tu perro tiene: <span id="resultado"> </span>
          </p>
 </div>
-
+<script>
 function calculateDogAge() {
   var myAge= document.getElementById('years').value;
   var dogAge = myAge * 7;
@@ -39,34 +23,8 @@ function calculateDogAge() {
   document.getElementById('resultado').innerHTML= dogAge + ' años perro.';
   
 }
-  
+</script>
 
-
-
-
-
-/*  OBJETOS 
-
-A) Define un constructor para generar objetos de tipo "Rectángulo" que reciba largo y ancho
-
-1) Largo
-2) Ancho
-
-B) Crea una funcion que se llame "calculaArea" que sea parte del constructor y que calcule el Area de un Rectangulo. 
-A = LxA y la escriba en consola. 
-
-C) Crea 2 objectos con diferentes mediciones y manda llamar la funcion calculArea de cada uno de ellos. 
-
-
-Se espera que en la consola aparezca el valor del Area. EJEMPLO: 
-
-let rect1 = new Rectangulo(10,10)
-
-rect1.calculaArea()
-
-// en consola se debería escribir: 100
-
-*/
 <div class='calculaArea'> 
   <form class='calculator'>
   <p> Largo:
@@ -80,31 +38,15 @@ rect1.calculaArea()
     <p id='text'> Area: <span id="resultado"> </span>
          </p>
 </div>
-
+<script>
 function calculaArea() {
   var largo= document.getElementById('largo').value;
-  var ancho= document.getElementById('ancho').value;
-  var dogAge = largo * ancho;
+  var ancho= document.getElementById('largo').value;
+  var area = ancho * largo;
  
-  document.getElementById('resultado').innerHTML= dogAge;
+  document.getElementById('resultado').innerHTML= area;
   
 }
-
-
-/***
- * 
- *        PRUEBA TUS FUNCIONES
- * 
- ***
-
-
-/***
- * 
- *        PRUEBA TUS OBJETOS AQUI
- * 
- ***/
-
-
 </script>
 
 </head>
