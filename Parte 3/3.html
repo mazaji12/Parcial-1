@@ -20,11 +20,29 @@ Funciones  -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 // CREA TU FUNCION calculateDogAge aqui:
+<div class='calculateDogAge'> 
+  <form class='calculator'>
+  <p> Introduce la edad de tu perro:
+  <input type="text" id ="años" placeholder="años"/>
+  <input type="button" value="Calcular" onclick="calculateDogAge()"/>
+  </p>
+  </form>
 
-function calculateDogAge (age){
-  return(age*7)
-  console.log("tu perro tiene"+age*7+"años perro")
-  }
+    <p id='text'> Tu perro tiene: <span id="resultado"> </span>
+         </p>
+</div>
+
+function calculateDogAge() {
+  var myAge= document.getElementById('years').value;
+  var dogAge = myAge * 7;
+ 
+  document.getElementById('resultado').innerHTML= dogAge + ' años perro.';
+  
+}
+  
+
+
+
 
 
 /*  OBJETOS 
@@ -49,7 +67,28 @@ rect1.calculaArea()
 // en consola se debería escribir: 100
 
 */
+<div class='calculaArea'> 
+  <form class='calculator'>
+  <p> Largo:
+  <input type="text" id ="largo" placeholder="unidades"/>
+  <p> Ancho:
+  <input type="text" id ="ancho" placeholder="unidades"/>
+  <input type="button" value="Calcular" onclick="calculaArea()"/>
+  </p>
+  </form>
 
+    <p id='text'> Area: <span id="resultado"> </span>
+         </p>
+</div>
+
+function calculaArea() {
+  var largo= document.getElementById('largo').value;
+  var ancho= document.getElementById('ancho').value;
+  var dogAge = largo * ancho;
+ 
+  document.getElementById('resultado').innerHTML= dogAge;
+  
+}
 
 
 /***
