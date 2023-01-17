@@ -60,9 +60,10 @@ body {
       
       ul {
         display: flex;
-    flex-direction: row;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     
-  
     }
     
   }
